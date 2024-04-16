@@ -69,5 +69,5 @@ FinalDF <- add_column(TransposedMeanData, Activities, .after="Subjects")
 rownames(FinalDF) <- NULL
 
 ##writes the final data frame to a text file
-write.table(FinalDF, file = "tidydata.txt")
+write.table(FinalDF, file = "tidydata.txt",row.names = FALSE)
 print("Tidy dataset completed")
